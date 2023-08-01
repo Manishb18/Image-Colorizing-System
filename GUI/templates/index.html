@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/index.css">
+    <title>ImageColorizer</title>
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="container">
+        <h2 class="heading">Image Colorizer</h2>
+        <div class="filecon">
+            <form action="/predict" method = "post" enctype="multipart/form-data" style = "display : {{img_paths['form_disp']}}">
+                <input type="file" name="file" class="inputcls" id="file1">
+                <input type="submit" class="inputcls" id="submit-btn" value="Colorize Image">
+            </form>
+        </div>
+        <div class="result" style = "display : {{img_paths['res_disp']}}">
+            <div class="original-div">
+                <img id = "original" src = "{{img_paths['original_img']}}">
+                <h2 class="image-head">Original Image</h2>
+            </div>
+            <div class="resultant-div">
+                <img id="resultant" src="{{ img_paths['result_img'] }}">
+                <h2 class="image-head">Colorized Image</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

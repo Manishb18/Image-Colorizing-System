@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('./background.jpg');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blur{
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(6px);
+}
+.heading{
+    margin-left: 20px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(
+        135deg,
+        rgba(166, 57, 221, 0.403),
+        rgba(255, 68, 186, 0.352)
+    );
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 2rem;
+    transform: translateY(-60px);
+    border: 1px solid black;
+    text-align: center;
+    display: inline;
+    align-items: flex-start;
+    border: 0px;
+    animation: gradient 10s linear infinite;
+    margin-top: 5vh;
+    display: inline;
+    width: auto;
+}
+
+.container{
+    height: 90dvh;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 20vh;
+}
+
+input{
+    outline: 0;
+    padding: 4px;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.inputcls{
+    margin-top: 10%;
+    display: inline;
+    align-self: center;
+    font-size: 110%;
+    padding: 6px;
+    transition: 0.5s;
+}
+
+#submit-btn:hover{
+    background-color: rgba(0, 0, 0, 0.374);
+    color: rgb(255, 255, 255);
+}
+
+
+.result{
+    display: flex;
+    width : 90dvw;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+.result img{
+    height: 400px;
+    width : 400px;
+    border-radius: 10px;
+}
+img{
+    display: inline;
+}
+.image-head{
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
